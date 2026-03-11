@@ -20,7 +20,7 @@ function verificaPreco()
     }
     else
     {
-        document.getElementById("precoFinal").innerHTML = "Valores negativos não são permitidos.";
-        alert("Valores negativos não são permitidos.");
+        document.getElementById("precoFinal").innerHTML = "Existem um ou mais valores inválidos. Valores negativos não são permitidos. Valor Máximo de desconto: 100";
+        alert("Existem um ou mais valores inválidos. Valores negativos não são permitidos. Valor Máximo de desconto: 100");
     }
 }
