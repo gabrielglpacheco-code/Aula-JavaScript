@@ -13,10 +13,14 @@ function verificaPreco()
     let precoFinal = (valor - totalDesconto);
     console.log("Preço final: ",precoFinal);
 
+    let valorF = valor.toLocalString('pt-BR', {style: 'currency', currency: 'BRL'});
+    let totalDescontoF = totalDesconto.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+    let precoFinalF = precoFinal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+
     if(precoFinal >=0 && desconto >=0 && desconto <=100)
     {
-        document.getElementById("precoFinal").innerHTML = "Valor: R$ " +valor+ " Desconto: " +desconto+ "% " + " Valor descontado: R$" +totalDesconto+ " Preço Final: R$ " +precoFinal;
-        alert("Valor: R$ " +valor+ " Desconto: " +desconto+ "% " + " Valor descontado: R$" +totalDesconto+ " Preço Final: R$ " +precoFinal);
+        document.getElementById("precoFinal").innerHTML = "Valor: R$ " +valorF+ " Desconto: " +desconto+ "% " + " Valor descontado: R$" +totalDescontoF+ " Preço Final: R$ " +precoFinalF;
+        alert("Valor: R$ " +valorF+ " Desconto: " +desconto+ "% " + " Valor descontado: R$" +totalDescontoF+ " Preço Final: R$ " +precoFinalF);
     }
     else
     {
