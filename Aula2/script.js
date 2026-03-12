@@ -88,3 +88,12 @@ function selecionaLingua()
     document.getElementById("benvindo").innerHTML = idiomaSelecionado;
     alert(idiomaSelecionado);
 }
+
+const listaDeCompras = ["Arroz","feijao","ovos"];
+console.log(listaDeCompras);
+
+listaDeCompras[3] = "farofa";
+console.log(listaDeCompras);
+
+listaDeCompras.push("maçã");
+console.log(listaDeCompras);
