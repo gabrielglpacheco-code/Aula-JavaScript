@@ -15,17 +15,15 @@
 <body>
     
     <div>
-
         <h1>Calculadora de aprovação</h1>
+
         <label>Digite a nota do aluno:</label>
         <input type="text" id="nota">
         <button onclick="verificaAprovacao()">Verificar aprovação</button>
         <p id="resultado"></p>
-    
     </div>
 
     <div>
-
         <h1>Calculadora de Descontos</h1>
 
         <label>Insira o valor do produto: </label>
@@ -36,11 +34,9 @@
         <br>
         <button onclick="verificaPreco()">Verificar Desconto</button>
         <p id="precoFinal"></p>
-
     </div>
 
     <div>
-
         <h1>Trocando de cor as DIVS</h1>
 
         <button id="botaoTrocaCor" onclick="trocaCor()">Trocar de cor</button>
@@ -48,11 +44,9 @@
         <div id="div1" class="divTrocaCor">Div 1</div>
         <div id="div2" class="divTrocaCor">Div 1</div>
         <div id="div3" class="divTrocaCor">Div 1</div>
-
     </div>
 
     <div>
-
         <h1>Calculadora Básica</h1>
 
         <p>Operadores válidos: +, -, *, /.</p>
@@ -61,52 +55,46 @@
         <input type="text" id="operador" placeholder="Operador">
         <button onclick="efetuaOperacao()">Efetuar Operação</button>
         <p id="resultado"></p>
-
     </div>
 
     <div>
-
         <h1>Escolha seu idioma de boas vindas</h1>
 
         <label for="idioma">Idioma: </label>
 
             <select name="" id="idioma">
-
                 <option value="">Selecione uma opção</option>
                 <option value="portugues">Português</option>
                 <option value="ingles">Inglês</option>
                 <option value="espanhol">Espanhol</option>
                 <option value="frances">Francês</option>
-
             </select>
-
         <button onclick="selecionaLingua()">Quero esse</button>
-
         <p id="benvindo"></p>
-
     </div>
     
     <div>
         <h1>Lista de Carros</h1>
+
         <div id="conteudo"></div>
-        <script src="script.js"></script>   <!--Script foi colocado aqui para ser iniciado após a div ser carregada-->
-
-    
-
-        <div>
-            <h1>Saudação Personalizada</h1>
-            <label for="nome">Digite seu nome: </label><input type="text" id="nome">
-            <label for="hora">Selecione a hora</label>
-            <select id="hora">
-                <option value="">Selecione</option>
-                <option value="8">8hs</option>
-                <option value="12">12hs</option>
-                <option value="18">18hs</option>
-            </select>
-            <button onclick="mostraSaudacao()">Mostrar Saudação</button>
-            <p id="mensagem"></p>
-        </div>
-    
     </div>
+    
+<script src="script.js"></script>   <!--Script foi colocado aqui para ser iniciado após a div ser carregada-->
+
+    <div>
+        <h1>Saudação Personalizada</h1>
+
+        <label for="nome">Digite seu nome: </label><input type="text" id="nome">
+        <label for="hora">Selecione a hora</label>
+        <select id="hora">
+            <option value="">Selecione</option>
+            <option value="8">8hs</option>
+            <option value="12">12hs</option>
+            <option value="18">18hs</option>
+        </select>
+        <button onclick="mostraSaudacao()">Mostrar Saudação</button>
+        <p id="mensagem"></p>
+    </div>
+
 </body>
 </html>
