@@ -164,14 +164,14 @@ console.log(listaDeCompras);
 
 //Repetição//
 
-const carros = ["uno", "fusca", "escort","gol","prisma","santana","opala"];
+const carros = ["Uno", "Fusca", "Escort","Gol","Prisma"];
 
 const conteudo = document.getElementById("conteudo");
 
 var dados = "";                                         //criado variável global para não criar uma nova a cada iteração
 var i = 0;                                              //valores das variáveis são reescritos a cada iteração
 
-while(i < 7)
+while(i < 5)
 {
     dados += "<p>" + carros[i]+"</p>";                //adicionar o + concatena os valores do array na variavel dados//
     i++;                                              //adiciona +1 ao contador//
@@ -282,7 +282,7 @@ criaSecao("Loop For EACH", dados);
 
 //DESAFIO 2
 
-let frutas = ["maca", "banana", "pera", "uva"];
+let frutas = ["Maçã", "Banana", "Pera", "Uva"];
 
 let continuar = true;
 
