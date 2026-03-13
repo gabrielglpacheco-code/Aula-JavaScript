@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <!--Script foi mudado de lugar para ser iniciado após a div ser carregada-->
 </head>
 <body>
     <h1>Trocando de cor as DIVS</h1>
@@ -39,5 +39,9 @@
         <button onclick="selecionaLingua()">Quero esse</button>
 
         <p id="benvindo"></p>
+
+    <h1>Lista de Carros</h1>
+    <div id="conteudo"></div>
+    <script src="script.js"></script>   <!--Script foi colocado aqui para ser iniciado após a div ser carregada-->
 </body>
 </html>
