@@ -22,6 +22,40 @@
             padding: 20px;
             font-size: 16px;
         }
+
+        .tabuleiro{
+            display: grid;
+            grid-template-columns: repeat(3,100px);
+            gap: 10px;
+        }
+
+        .celula{
+            display: flex;
+            background-color: grey;
+            width: 100px;
+            height: 100px;
+            justify-content: center;
+            align-items: center;
+            font-size: 46px;
+            cursor: pointer;
+        }
+
+        .jogoVelha{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .reiniciaJogo{
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        label,button{
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -66,7 +100,7 @@
         <input type="text" id="num2" placeholder="Segundo número">
         <input type="text" id="operador" placeholder="Operador">
         <button onclick="efetuaOperacao()">Efetuar Operação</button>
-        <p id="resultado"></p>
+        <p id="resultadoCalcBasic"></p>
     </div>
 
     <div>
@@ -115,6 +149,54 @@
         <button id="greenButton" class="botao">Botão Verde</button>
         <button id="blueButton" class="botao">Botão Azul</button>
         <input type="text" class="inputao" id="inputBox" placeholder="Pressionar uma tecla" size="20" >
+    </div>
+
+
+    <!--Desafio incompleto, fazer depois-->
+
+    <div>
+        <h1>Função Pizzaria Desafio</h1>
+
+        <label for="pedido">Faça seu pedido</label>
+        <input type="number" placeholder="Insira seu pedido aqui">
+        <button></button>
+    </div>
+
+    <!--Fim Desafio-->
+
+    <!--Jogo da velha-->
+
+    <div class="jogoVelha">
+        <h1>Jogo da velha</h1>
+        <div id="tabuleiro" class="tabuleiro">
+            <button class="celula"></button>
+            <button class="celula"></button>
+            <button class="celula"></button>
+            <button class="celula"></button>
+            <button class="celula"></button>
+            <button class="celula"></button>
+            <button class="celula"></button>
+            <button class="celula"></button>
+            <button class="celula"></button>
+        </div>
+        <button id="reiniciar" class="reiniciaJogo">Reiniciar o jogo</button>
+    </div>
+
+    <!--Validações-->
+
+    <div>
+        <h1>Formulário de Contato</h1>
+        <form id="contactForm">
+            <label for="name">Nome: </label>
+            <input type="text" id="name" required maxlength="256">
+            <label for="email">Email: </label>
+            <input type="email" id="email" required maxlength="256">
+            <label for="message">Mensagem: </label>
+            <textarea name="message" id="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+
+
     </div>
 
 <script src="script.js"></script>   <!--Script foi colocado aqui para ser iniciado após a div ser carregada-->
