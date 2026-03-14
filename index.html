@@ -6,9 +6,21 @@
     <title>Aulas JavaScript</title>
     <!--Script foi mudado de lugar para ser iniciado após a div ser carregada-->
     <style>
-        label,button{
+        .saudacao{
             display: block;
             margin-top: 10px;
+        }
+
+        .botao{
+            margin: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .inputao{
+            margin-top: 20px;
+            padding: 20px;
+            font-size: 16px;
         }
     </style>
 </head>
@@ -79,22 +91,33 @@
         <div id="conteudo"></div>
     </div>
     
-<script src="script.js"></script>   <!--Script foi colocado aqui para ser iniciado após a div ser carregada-->
+
 
     <div>
         <h1>Saudação Personalizada</h1>
 
-        <label for="nome">Digite seu nome: </label><input type="text" id="nome">
-        <label for="hora">Selecione a hora</label>
+        <label for="nome" class="saudacao">Digite seu nome: </label><input type="text" id="nome">
+        <label for="hora" class="saudacao">Selecione a hora</label>
         <select id="hora">
             <option value="">Selecione</option>
             <option value="8">8hs</option>
             <option value="12">12hs</option>
             <option value="18">18hs</option>
         </select>
-        <button onclick="mostraSaudacao()">Mostrar Saudação</button>
+        <button onclick="mostraSaudacao()" class="saudacao">Mostrar Saudação</button>
         <p id="mensagem"></p>
     </div>
+
+    <div>
+        <h1>Escolha a cor de fundo ou interaja de outras formas</h1>
+
+        <button id="redButton" class="botao">Botão Vermelho</button>
+        <button id="greenButton" class="botao">Botão Verde</button>
+        <button id="blueButton" class="botao">Botão Azul</button>
+        <input type="text" class="inputao" id="inputBox" placeholder="Pressionar uma tecla" size="20" >
+    </div>
+
+<script src="script.js"></script>   <!--Script foi colocado aqui para ser iniciado após a div ser carregada-->
 
 </body>
 </html>
