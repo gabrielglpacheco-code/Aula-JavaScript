@@ -413,3 +413,13 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         alert("Formulário validado!");
     }
 });
+
+
+//DESAFIO VALIDAÇÕES
+
+//Crie um site simples com 3 campos de input
+//1 email 2 numero de telefone 3 senha
+// valide com javascript e regex o emai telefone e senha
+// dica usa exprções regex
+
+//rever backend aula 1 e 2
